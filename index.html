@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panorama Sea Guest House</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="main-video-bg">
+        <video src="./media/playback.mp4" autoplay muted preload="auto" loop="true"></video>
+      </div>
+      <header class="header">
+        <div class="container">
+          <div class="row header-top">
+            <div class="header-links col-2 col-md-3">
+              <button class="header-search"><span class="material-symbols-outlined">search</span></button>
+              <ul class="header-links-list">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="header-logo col-8 col-md-6"></div>
+            <div class="header-btn col-2 col-md-3">
+              <div class="header-burger"><span class="material-symbols-outlined">menu</span></div>
+              <button class="btn btn-transparent header-register">Бронировать</button>
+            </div>
+          </div>
+          <nav class="row header-nav">
+            <div class="header-nav-close close-btn"><span class="material-symbols-outlined">close</span></div>
+            <ul class="header-nav-list">
+              <li><a class="header-nav-link" href="#">Главная</a></li>
+              <li><a class="header-nav-link" href="#">Расположение</a></li>
+              <li><a class="header-nav-link" href="#">Услуги</a></li>
+              <li><a class="header-nav-link" href="#">Номера</a></li>
+              <li><a class="header-nav-link" href="#">Галерея</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="slogan-block">
+        <div class="container">
+          <h1 class="slogan-title">Panorama Sea</h1><span class="slogan-subtitle">Гостевой дом в Лазаревском</span>
+        </div>
+      </section>
+      <section class="reservation">
+        <div class="container">
+          <form class="reservation-search" method="POST" action="#">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3 reservation-item">
+                <input type="date" name="reservation-date" value="2018-07-22">
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 reservation-item">
+                <input type="number" name="reservation-guests" placeholder="Guests">
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 reservation-item">
+                <input type="number" name="reservation-rooms" placeholder="Rooms">
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 reservation-item">
+                <button class="btn reservation-btn" type="submit">Бронировать</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <article class="about-block">
+      <div class="container about-wrapper">
+        <div class="about-image"><img src="./img/intro-1.jpg" width="300" height="150" alt="about-image"></div>
+        <div class="about-content">
+          <h2 class="section-title">Гостевой дом PanoramaSea</h2>
+          <p class="about-text">Дарит прекрасную возможность провести незабываемые дни отдыха, позабыв о городской суете и ежедневных заботах. Расслабьтесь и насладитесь каждым моментом в нашем гостевом доме Черноморского побережья России.</p>
+          <p class="about-text">Гостевой дом находится в поселке Лазаревское города-курорта Сочи, в тихой и зеленой зоне. Из номеров открывается живописный вид на море, до берега которого всего 400 м. В пешей доступности располагаются кафе и магазины. Автобусная остановка в 5 минутах, гипермаркет «Магнит» – в 15 минутах, аквапарк «Наутилус» – в 20 минутах ходьбы. До центра можно добраться на машине ( 5 мин) или же пройтись спокойным шагом в течении 25-30 минутах. ЖД вокзал – в 5 минутах езды на автомобиле. </p><a class="about-link page-link page-link-mob" href="#">Подробнее о Panorama Sea</a>
+        </div><a class="about-link page-link page-link-web" href="#">Подробнее о Panorama Sea</a>
+      </div>
+    </article>
+    <section class="accomodation-block">
+      <div class="container">
+        <h2 class="section-title">Номера Panorama Sea</h2>
+      </div>
+      <div class="accomodation-block-carusel container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide accomodation-slide">
+              <div class="accomodation-slide-image"><img src="./img/room.jpg" with="200" height="150" alt="room image"></div>
+              <div class="accomodation-slide-content">
+                <h3 class="accomodation-slide-name">Стандартный номер с видом на море</h3>
+                <div class="accomodation-slide-buttons"><a class="btn btn-transparent accomodation-detales">Подробнее</a><a class="btn accomodation-rates">Бронировать</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide accomodation-slide">
+              <div class="accomodation-slide-image"><img src="./img/room.jpg" with="200" height="150" alt="room image"></div>
+              <div class="accomodation-slide-content">
+                <h3 class="accomodation-slide-name">Стандартный номер на первом этаже</h3>
+                <div class="accomodation-slide-buttons"><a class="btn btn-transparent accomodation-detales">Подробнее</a><a class="btn accomodation-rates">Бронировать</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide accomodation-slide">
+              <div class="accomodation-slide-image"><img src="./img/room.jpg" with="200" height="150" alt="room image"></div>
+              <div class="accomodation-slide-content">
+                <h3 class="accomodation-slide-name">Стандартный трехместный номер</h3>
+                <div class="accomodation-slide-buttons"><a class="btn btn-transparent accomodation-detales">Подробнее</a><a class="btn accomodation-rates">Бронировать</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide accomodation-slide">
+              <div class="accomodation-slide-image"><img src="./img/room.jpg" with="200" height="150" alt="room image"></div>
+              <div class="accomodation-slide-content">
+                <h3 class="accomodation-slide-name">Семейный номер</h3>
+                <div class="accomodation-slide-buttons"><a class="btn btn-transparent accomodation-detales">Подробнее</a><a class="btn accomodation-rates">Бронировать</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container"><a class="page-link" href="#">Explore all villas</a></div>
+    </section>
+    <section class="facilities-block">
+      <div class="container">
+        <div class="row">
+          <div class="facilities-image col-xs-12 col-lg-5"><img src="./img/restaurants.png" width="300" height="150" alt="restaurants image"></div>
+          <div class="facilities-content col-xs-12 col-lg-7">
+            <h2 class="section-title">Restaurants and bar</h2>
+            <p class="facilities-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus mollitia tempore praesentium, veritatis vel esse nostrum minus expedita ipsum dolorum, possimus similique sunt amet deleniti molestiae autem, exercitationem dolores repellendus ipsam officia laborum. Repudiandae itaque id est facilis. Necessitatibus iure provident totam officiis velit maxime voluptate incidunt doloremque porro nesciunt.</p><a class="page-link facilities-link" href="#">View more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="laisure-block">
+      <div class="laisure-image"><img src="./img/room.jpg" width="300" height="150" alt="laisure image"></div>
+      <div class="container">
+        <h2 class="section-title">Spa & wellberg</h2>
+        <p class="laisure-subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum asperiores quidem cupiditate odio expedita. Deserunt eos possimus ea libero fugiat.</p>
+      </div>
+      <div class="container laisure-block-link"><a class="page-link" href="#">Explore all villas</a></div>
+    </section>
+    <section class="servises-block">
+      <div class="container">
+        <h2 class="section-title">Chill or play</h2>
+        <ul class="servises-list row">
+          <li class="servises-item col-xs-12 col-md-6">
+            <h4 class="servises-name">Dolphine cruise</h4><img src="./img/photo-1.jpg" width="300" height="150" alt="servise image">
+          </li>
+          <li class="servises-item col-xs-12 col-md-6">
+            <h4 class="servises-name">Sandbank adventure</h4><img src="./img/photo-1.jpg" width="300" height="150" alt="servise image">
+          </li>
+          <li class="servises-item col-xs-12 col-md-6">
+            <h4 class="servises-name">Turtle quest</h4><img src="./img/photo-1.jpg" width="300" height="150" alt="servise image">
+          </li>
+          <li class="servises-item col-xs-12 col-md-6">
+            <h4 class="servises-name">Flyboarding</h4><img src="./img/photo-1.jpg" width="300" height="150" alt="servise image">
+          </li>
+        </ul><a class="page-link servises-block-link" href="#">View activities</a>
+      </div>
+    </section>
+    <article class="about-block">
+      <div class="container about-wrapper">
+        <div class="about-image"><img src="./img/photo-1.jpg" width="300" height="150" alt="about-image"></div>
+        <div class="about-content">
+          <h2 class="section-title">Relax into island time</h2>
+          <p class="about-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque optio nisi odio magnam fugit provident dolor, aliquam excepturi. Deserunt, saepe odit inventore minus totam pariatur nisi magnam, excepturi dolores non quasi beatae quas est fugiat, dolorem reprehenderit facilis quia aspernatur veritatis sed. Consequuntur, minima dolorem tenetur distinctio et excepturi!</p>
+          <p class="about-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque optio nisi odio magnam fugit provident dolor, aliquam excepturi. Deserunt, saepe odit inventore minus totam pariatur nisi magnam, excepturi dolores non quasi beatae quas est fugiat, dolorem reprehenderit facilis quia aspernatur veritatis sed. Consequuntur, minima dolorem tenetur distinctio et excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perferendis!</p><a class="about-link page-link page-link-mob" href="#">Explore island</a>
+        </div><a class="about-link page-link page-link-web" href="#">Explore island</a>
+      </div>
+    </article>
+    <section class="address-block">
+      <div class="container">
+        <div class="row">
+          <div class="address-content col-xs-12 col-md-6">
+            <h3 class="address-title">Getting here</h3>
+            <p class="address-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi veniam consequatur tempora? Perferendis eaque laborum sequi architecto possimus delectus voluptatibus, natus eos aperiam, quaerat consectetur iure cupiditate, doloremque vitae molestias!</p><span class="address-company-name">Panorama Sea Guest House</span>
+            <address><span>Dhaalu atoll PO BOX 2002 republic of maldives</span><a class="address-phone" href="#">+13115552368</a><a class="address-email" href="#">example@gmail.com</a></address>
+          </div>
+          <div class="address-map col-xs-12 col-md-6"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-block">
+      <div class="container">
+        <div class="footer-logo"><img src="./img/logo.svg" width="120" height="60" alt="site logo"></div>
+        <div class="row footer-links">
+          <ul class="footer-links-list col-6 col-md-3">
+            <li class="footer-link-item"><a class="footer-link" href="#">About us</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="#">Careers</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="#">Contact us</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="#"></a></li>
+          </ul>
+          <ul class="footer-links-list col-6 col-md-3">
+            <li class="footer-link-item"><a class="footer-link" href="#">About us</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="#">Careers</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="#">Contact us</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="#"></a></li>
+          </ul>
+          <ul class="footer-links-list col-6 col-md-3">
+            <li class="footer-link-item"><a class="footer-link" href="#">About us</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="#">Careers</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="#">Contact us</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="#"></a></li>
+          </ul>
+          <ul class="footer-links-list col-6 col-md-3">
+            <li class="footer-link-item"><a class="footer-link" href="#">About us</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="#">Careers</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="#">Contact us</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul class="footer-social-list">
+            <li><a class="footer-social-link footer-fb" href="#">Facebook</a></li>
+            <li><a class="footer-social-link footer-ig" href="#">Instagram</a></li>
+            <li><a class="footer-social-link footer-yt" href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-bottom-list">
+            <li><a class="footer-bottom-link" href="">Legal notice</a></li>
+            <li><a class="footer-bottom-link" href="">Privacy policy</a></li>
+            <li><a class="footer-bottom-link" href="">Cookie preferences</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
